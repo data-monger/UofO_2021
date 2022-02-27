@@ -66,8 +66,8 @@ def tobs():
     return jsnC(temps_ls=temps_ls)
 
 
-appF.route('/api/v1.0/temp/<start>')
-appF.route('/api/v1.0/temp/<start>/<end>')
+@appF.route('/api/v1.0/temp/<start>')
+@appF.route('/api/v1.0/temp/<start>/<end>')
 def stats(start=None, end=None):
     sess=session(engine)
     sel_ls = [func.min(measure_f.tobs), func.avg(measure_f.tobs), func.max(measure_f.tobs)]

@@ -44,7 +44,7 @@ def precipitation():
     precip_qr = sess.query(measure_f.date, measure_f.prcp).filter(measure_f.date >= prev_yr).all()
     precip_ls = {date: prcp for date, prcp in precip_qr}
     sess.close()
-    return jsnC(precip_ls)
+    return jsnC(precip_ls=precip_ls)
 
 
 @appF.route('/api/v1.0/stations')

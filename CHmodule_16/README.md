@@ -2,7 +2,7 @@
 
 ## Overview
 
-Ingest, store and run analytics on Amazon reviews for a distinct product category utilizing "big-data" tools an methodologies.
+Ingest, store and run analytics on Amazon reviews using AWS and Google COLAB for a distinct product category utilizing "big-data" tools and methodologies.
 
 ## Results
 
